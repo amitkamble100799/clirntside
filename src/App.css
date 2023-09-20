@@ -1,38 +1,53 @@
-.App {
+body{
+  background-image: url('https://img.freepik.com/free-photo/calm-sea-sunny-day_181624-6152.jpg?w=360');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Page{
+  width: 30vw;
+  margin: 4em auto;
   text-align: center;
+  background-color: rgb(164, 242, 245);
+  border-radius: 1em;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.body{
+  background-color: rgb(102, 233, 233);
 }
+.signup{
+  & form{
+      padding: 0 10%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  }
+}
+form{
+  padding: 0 15%;
+  & button{
+      font-size: 1.5em;
+      margin-top: 1em;
+      width: 100%;
+      border-radius: 1em;
+      background-color: #00DBDE;
+      background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+  }
+}
+.form-control{
+  width: 40%;
+}
+.bottom_msg{
+  padding: 3em 0;
+  cursor: pointer;
+  &:hover{
+      color: #00DBDE;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1{
+  font-size: 1.5em;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media only screen and (max-width: 600px) {
+  .Page{
+    width: 70vw;    
   }
 }
